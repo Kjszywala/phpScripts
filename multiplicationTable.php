@@ -9,13 +9,13 @@
 </head>
 <body>
 <br><center>
-<b>Podaj zakres tabliczki mnozenia</b></br></br>
+<b>Enter the range of the multiplication table</b></br></br>
 <form method=POST>
-  <b>Od </b>
+  <b>From </b>
   <input type="text" name="od" maxlength="10" size="5"/>
-  <b> Do </b>
+  <b> To </b>
   <input type="text" name="do" maxlength="10" size="5"/>
-  <input type=submit name="test" id="test" value='Pokaz Tabliczke' style='background-color: pink;'></br></br>
+  <input type=submit name="test" id="test" value='Show Table' style='background-color: pink;'></br></br>
 </form>
 <table border='1'>
 <?php 
