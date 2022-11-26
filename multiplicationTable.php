@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Logowanie</title>
+  <title>Login</title>
   <style>
 	body { background-color: teal; color: #FFFFFF; }
 	input[type="text"]{ text-align:center; }
