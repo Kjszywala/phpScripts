@@ -1,7 +1,7 @@
 <?php
-function getData($serialNumber, $FilePath){
+function getData($string, $FilePath){
     // data fields for POST request
-    $fields = array("serialNumber" => $serialNumber, "createPrn" => "true");
+    $fields = array("key" => $string, "key" => "value");
 
     // files to upload
     $filenames = array($FilePath);
@@ -12,7 +12,7 @@ function getData($serialNumber, $FilePath){
     }
 
     // URL to upload to
-    $url = "https://localhost:7127/Form/Index";
+    $url = "weburl";
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
@@ -61,7 +61,7 @@ function build_data_files($boundary, $fields, $files){
     return $data;
 }
 
-$file = fopen("C:/Users/kamil.szywala/Desktop/kamilphp.prn","wb");
-fwrite($file, getData('75558410','C:/Users/kamil.szywala/Desktop/printer_report_75558410.txt'));
+$file = fopen("file path to save","wb");
+fwrite($file, getData('string','filepath'));
 fclose($file);
 ?>
