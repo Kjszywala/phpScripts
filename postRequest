@@ -1,5 +1,5 @@
 <?php
-function getPrn($serialNumber, $FilePath){
+function getData($serialNumber, $FilePath){
     // data fields for POST request
     $fields = array("serialNumber" => $serialNumber, "createPrn" => "true");
 
@@ -61,7 +61,7 @@ function build_data_files($boundary, $fields, $files){
     return $data;
 }
 
-$file = fopen("filepath to write","wb");
-fwrite($file, getPrn('string','filepath'));
+$file = fopen("C:/Users/kamil.szywala/Desktop/kamilphp.prn","wb");
+fwrite($file, getData('75558410','C:/Users/kamil.szywala/Desktop/printer_report_75558410.txt'));
 fclose($file);
 ?>
