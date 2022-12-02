@@ -51,7 +51,7 @@ function build_data_files($boundary, $fields, $files){
     }
     foreach ($files as $name => $content) {
         $data .= "--" . $delimiter . $eol
-            . 'Content-Disposition: form-data; name="' . $name . '"; filename="' . $name . '"' . $eol
+            . 'Content-Disposition: form-data; name=your post field name here; filename="' . $name . '"' . $eol
             . 'Content-Transfer-Encoding: binary'.$eol
             ;
         $data .= $eol;
